@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Slider</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/sliding.png" type="image/x-icon">
+</head>
+<body>
+  <section>
+
+    <div class="bannerVideo" id="slideShow">
+      <video src="./img/video1.mp4" autoplay muted loop class="active"></video>
+      <video src="./img/video2.mp4" autoplay muted loop ></video>
+      <video src="./img/video3.mp4" autoplay muted loop></video>
+      <video src="./img/video4.mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="container">
+      
+      <header id="navbar">
+        <a href="#" class="logo">World</a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Destination</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span class="menuIcon" onclick="toggleMenu()"></span>
+      </header>
+
+      <div class="content">
+        <div class="bannerText" id="slideShowText">
+
+          <div class="active">
+            <h2>Caracas</h2>
+              <p>
+                Es conocida también como “La Sucursal del Cielo” o “La Ciudad de la Eterna Primavera”.
+                Se encuentra ubicada en la zona centro-norte del país, a unos 15 Km. del Mar Caribe y se sitúa dentro de un valle en el sistema de la Cordillera de la Costa a una altitud promedio de 900 metros sobre el nivel del mar
+              </p>
+          </div>
+
+          <div>
+            <h2>Santiago</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                qui, ab alias porro architecto ut tempora eos pariatur at ad
+                voluptatem dolores soluta eaque consectetur nulla? Ullam officia
+                sunt repudiandae.
+              </p>
+          </div>
+
+          <div>
+            <h2>Coro</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                qui, ab alias porro architecto ut tempora eos pariatur at ad
+                voluptatem dolores soluta eaque consectetur nulla? Ullam officia
+                sunt repudiandae.
+              </p>
+          </div>
+          
+          <div>
+            <h2>La Guaira</h2>
+              <p>
+                Esta para mí es una de las mejores playas para el descanso y disfrute, además cuenta con excelentes hoteles y posadas alrededor así, como los servicios de bares y restaurantes. <br>
+                Sus playas destacan por la belleza, un escenario idílico donde convergen arenas blancas, aguas turquesas, bosques de palmeras y privilegiados fondos marinos de baja profundidad, donde realizar snorkeling, entre corales y peces de colores.
+              </p>
+          </div>
+
+        </div>
+      </div>
+
+      <ul class="controls">
+        <li onclick="prevSlide();prevSlideText();"><img src="./img/left.png" /></li>
+        <li onclick="nextSlide();nextSlideText();"><img src="./img/right.png" /></li>
+      </ul>
+    </div>
+
+  </section>
+  <script src="./script.js"></script>
+</body>
+</html>
